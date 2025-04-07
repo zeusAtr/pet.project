@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "module": "commonjs",
+  "type": "module",
   "scripts": {
     "test": "jest",
-    "compile": "tsc"
+    "compile": "tsc",
+    "lint": "eslint --ext .ts .",
+    "lint:fix": "eslint --ext .ts --fix ."
   },
   "keywords": [],
   "author": "vlad.pavlov",
@@ -13,10 +16,14 @@
   "description": "",
   "devDependencies": {
     "@babel/preset-env": "^7.26.9",
+    "@eslint/js": "^9.24.0",
     "@types/jest": "^29.5.14",
     "babel-jest": "^29.7.0",
+    "eslint": "^9.24.0",
+    "globals": "^16.0.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.3.1",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.1"
   }
 }
